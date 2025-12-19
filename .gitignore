@@ -1,23 +1,30 @@
-# Ambiente virtual
-venv/
-env/
-ENV/
-
-# Arquivos Python
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
 
-# Arquivos gerados
-*.csv
-# Imagens são organizadas na pasta imagens/
-imagens/*.png
-imagens/*.jpg
-imagens/*.jpeg
+# Outputs
+outputs/*
+!outputs/.gitkeep
 
-# IDEs
+# Data (não commitar dados sensíveis)
+data/*.csv
+data/*.xlsx
+!data/README.md
+
+# Logs
+*.log
+logs.txt
+
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -28,3 +35,5 @@ imagens/*.jpeg
 .DS_Store
 Thumbs.db
 
+# Docker
+.dockerignore

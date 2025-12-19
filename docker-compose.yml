@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  pipeline:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./configs:/app/configs
+    command: ["--config", "configs/config.yaml"]
+    environment:
+      - PYTHONUNBUFFERED=1
+
