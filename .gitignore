@@ -1,0 +1,30 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Arquivos gerados
+*.csv
+# Imagens são organizadas na pasta imagens/
+imagens/*.png
+imagens/*.jpg
+imagens/*.jpeg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
